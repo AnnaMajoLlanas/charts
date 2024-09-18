@@ -20,7 +20,7 @@ data:
   NEO4J_causal__clustering_minimum__core__cluster__size__at__runtime: "2"
   NEO4J_dbms_jvm_additional: "-XX:+ExitOnOutOfMemoryError"
   {{- if .Values.useAPOC }}
-  NEO4JLABS_PLUGINS: "[\"apoc\", \"gds\"]"
+  NEO4JLABS_PLUGINS: "[\"apoc\", \"graph-data-science\"]"
   NEO4J_apoc_import_file_use__neo4j__config: "true"
-  NEO4J_dbms_security_procedures_unrestricted: "gds.*,apoc.*"
+  NEO4J_dbms_security_procedures_unrestricted: "graph-data-science.*,apoc.*"
   {{- end }}
