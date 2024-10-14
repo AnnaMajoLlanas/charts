@@ -1,0 +1,13 @@
+kafka:
+  jmx:
+    enabled: true
+    port: 5555  # Este será el puerto donde se expondrán las métricas JMX
+
+  metrics:
+    kafka:
+      enabled: true
+    serviceMonitor:
+      enabled: true
+
+service:
+  type: LoadBalancer
